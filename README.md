@@ -62,7 +62,7 @@ Pass: admin
 
 3-> Copy the unzip file and paste into the htdocs folder.
 
-4-> http://localhost/Tourist%20Page/Views/login.php (copy the link and paste it to your browser url)
+4-> http://localhost/Tourist%20Page/Views/login.php (copy the link and paste it to your browser)
 
 
 
