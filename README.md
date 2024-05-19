@@ -1,25 +1,41 @@
 # Universus_Tourism_Webpage
 
 This is a website based on tourist management where I used HTML, CSS, Java Script, PHP, SQL(PhpMyAdmin), API. There are two part. One is Tourist and another is ADMIN.
+
 #Functionalities of the website
+
 1-> Weather API
+
 2-> Flag API
+
 3-> tawk.to chat API
+
 4-> Stripe Payment API (Test Mode)
+
 5-> Chart.js
+
 6-> Search on table
+
 7-> Notification Alart
+
 7-> CRUD operation
+
 8-> MVC Framework
+
 9-> Sending Email
+
 10-> Invoice Generation
 
 #Tourist site login
+
 ID: naimurrahman@gmail.com
+
 Pass: admin
 
 #Admin site login 
+
 ID: admin
+
 Pass: admin
 
 #Figma Links:
@@ -39,10 +55,15 @@ Pass: admin
 
 
 #How to use:
+
 1-> Download and unzip the file;
+
 2-> Import the database;
+
 3-> Copy the unzip file and paste into the htdocs folder.
+
 4-> http://localhost/Tourist%20Page/Views/login.php (copy the link and paste it to your browser url)
+
 
 
 
