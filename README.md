@@ -32,7 +32,7 @@ ID: naimurrahman@gmail.com
 
 Pass: admin
 
-#Admin site login 
+#Admin site login
 
 ID: admin
 
@@ -51,10 +51,6 @@ Pass: admin
 ![image](https://github.com/EtherSphere01/Universus_Tourism_Webpage/assets/84018165/da576c8d-4d78-4534-ad75-0b66bb70076d)
 ![image](https://github.com/EtherSphere01/Universus_Tourism_Webpage/assets/84018165/78877851-93ce-4299-943c-3c561c1950b7)
 
-
-
-
-
 #How to use:
 
 1-> Download and unzip the file;
@@ -64,8 +60,3 @@ Pass: admin
 3-> Copy the unzip file and paste into the htdocs folder.
 
 4-> http://localhost/Tourist%20Page/Views/login.php (copy the link and paste it to your browser)
-
-
-
-
-
