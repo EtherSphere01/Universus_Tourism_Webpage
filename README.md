@@ -40,6 +40,7 @@ Pass: admin
 
 #Figma Links:
 1-> https://www.figma.com/file/4cEoXAkviQ8Tgs7GA4t2IS/Tourist-Homepage?type=design&node-id=0%3A1&mode=design&t=2HZhYDQ7OFGFkiIJ-1
+
 2-> https://www.figma.com/file/VOeLmGDD7O5WhgTQNdVJUU/Admin-Dashboard?type=design&node-id=0-1&mode=design
 
 #Images:
