@@ -1,0 +1,776 @@
+/* -------------------------------------------Main Body-------------------------------------------- */
+.dashboard {
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  font-weight: 600;
+}
+
+.header-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.4vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: #000000;
+
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 25% 34% 41%;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.3vw 0.3vw 0.3vw 0.3vw; */
+  grid-template-areas:
+    "main-details main-right"
+    "main-middle main-middle"
+    "main-bottom main-bottom";
+}
+.main-details {
+  grid-area: main-details;
+  justify-self: center;
+  margin: 0.3vw 0.3vw;
+  padding: 0.3vw 0.3vw 0.6vw 0.3vw;
+  width: 96%;
+  height: 92%;
+  border-radius: 0.5vw;
+  background: #cbd9fc;
+  display: grid;
+  grid-template-rows: 49% 49%;
+  grid-template-columns: 49% 49%;
+  grid-gap: 0.4vw;
+
+  /* gap: 0.3vw;
+  
+
+  /* filter: blur(2px); */
+  /* background-color: red; */
+}
+
+.boxs {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 0.4vw;
+}
+
+.details-box1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35% 65%;
+  gap: 0.4vw;
+  background-color: #a7bfff;
+  border: 1px solid #1f28583d;
+  box-shadow: 1px 1px 4px 0px #1873db;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas:
+    "icon total"
+    "icon para";
+
+  .box1-icon {
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+
+    height: 4.5vw;
+    width: 4.2vw;
+  }
+  .travelers-num {
+    font-family: "Poppins", sans-serif;
+    grid-area: total;
+    align-self: end;
+    justify-self: center;
+
+    font-size: 2vw;
+  }
+  .total-travelers {
+    font-family: "Poppins", sans-serif;
+    grid-area: para;
+    align-self: start;
+    justify-self: center;
+    font-size: 0.93vw;
+  }
+}
+
+.details-box2 {
+  background-color: #8eadff;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35% 65%;
+  gap: 0.4vw;
+  border: 1px solid #1f28583d;
+  box-shadow: 1px 1px 4px 0px #1c68c0;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas:
+    "icon total"
+    "icon para";
+
+  .box2-icon {
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+
+    height: 4.5vw;
+    width: 4.2vw;
+  }
+  .bookings-num {
+    font-family: "Poppins", sans-serif;
+    grid-area: total;
+    align-self: end;
+    justify-self: center;
+
+    font-size: 2vw;
+  }
+  .total-bookings {
+    font-family: "Poppins", sans-serif;
+    grid-area: para;
+    align-self: start;
+    justify-self: center;
+    font-size: 0.93vw;
+  }
+}
+
+.details-box3 {
+  background-color: #79cfff;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35% 65%;
+  gap: 0.4vw;
+  border: 1px solid #1f28583d;
+  box-shadow: 1px 1px 4px 0px #1873db;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas:
+    "icon total"
+    "icon para";
+
+  .box3-icon {
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+
+    height: 4.5vw;
+    width: 4.2vw;
+  }
+  .active-num {
+    font-family: "Poppins", sans-serif;
+    grid-area: total;
+    align-self: end;
+    justify-self: center;
+
+    font-size: 2vw;
+  }
+  .total-active {
+    font-family: "Poppins", sans-serif;
+    grid-area: para;
+    align-self: start;
+    justify-self: center;
+    font-size: 0.95vw;
+  }
+}
+
+.details-box4 {
+  background-color: #319c69;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35% 65%;
+  gap: 0.4vw;
+  border: 1px solid #1344193d;
+  box-shadow: 1px 1px 4px 0px #235f17;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas:
+    "icon total"
+    "icon para";
+
+  .box4-icon {
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+
+    height: 4.5vw;
+    width: 4.2vw;
+  }
+  .earnings-num {
+    font-family: "Poppins", sans-serif;
+    grid-area: total;
+    align-self: end;
+    justify-self: center;
+
+    font-size: 1.5vw;
+  }
+  .total-earnings {
+    font-family: "Poppins", sans-serif;
+    grid-area: para;
+    align-self: start;
+    justify-self: center;
+    font-size: 1vw;
+  }
+}
+
+.main-details-hover:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 0.3s linear;
+}
+
+.main-right {
+  grid-area: main-right;
+  justify-self: center;
+  background-color: #cbd9fc;
+  height: 97%;
+  width: 98.5%;
+  margin: 0.3vw 0.3vw;
+  border-radius: 0.5vw;
+}
+
+.main-middle {
+  grid-area: main-middle;
+  justify-self: center;
+  background-color: #cbd9fc;
+  height: 99%;
+  width: 96%;
+  /* margin: 0.3vw 0.3vw; */
+  border-radius: 0.5vw;
+}
+
+.main-bottom {
+  grid-area: main-bottom;
+  justify-self: center;
+  background-color: #cbd9fc;
+  height: 97.5%;
+  width: 99%;
+  margin: 0.3vw 0.3vw;
+  border-radius: 0.5vw;
+}
+
+/* --------------------------------------------------Main Right----------------------------------------- */
+
+.main-right {
+  display: grid;
+  grid-template-rows: 26% 23% 23% 23%;
+  grid-template-columns: 48% 52%;
+
+  grid-template-areas:
+    "headings pie-chart"
+    "first-discount pie-chart"
+    "second-discount pie-chart"
+    "third-discount pie-chart";
+}
+
+.headings {
+  grid-area: headings;
+  padding-left: 0.6vw;
+  padding-top: 0.6vw;
+
+  .discount {
+    font-size: 1.3vw;
+  }
+  .lastdays {
+    font-size: 0.9vw;
+  }
+}
+
+.first-discount {
+  grid-area: first-discount;
+  padding-left: 0.6vw;
+  font-size: 1.05vw;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 18% 61% 20%;
+  grid-template-areas: "colorr name percentage";
+  align-items: end;
+
+  .first-discount-color {
+    grid-area: colorr;
+    height: 1.5vw;
+    width: 3.2vw;
+    border-radius: 0.3vw;
+    background-color: #31035fd3;
+    box-shadow: 0px 0px 3px 0px #31035fd3;
+  }
+  .first-discount-name {
+    grid-area: name;
+  }
+  .first-discount-per {
+    font-family: "Poppins", sans-serif;
+    grid-area: percentage;
+  }
+}
+
+.second-discount {
+  grid-area: second-discount;
+  padding-left: 0.6vw;
+  font-size: 1.05vw;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 18% 61% 20%;
+  grid-template-areas: "colorr name percentage";
+  align-items: center;
+
+  .second-discount-color {
+    grid-area: colorr;
+    height: 1.5vw;
+    width: 3.2vw;
+    border-radius: 0.3vw;
+    background-color: #c082ff;
+    box-shadow: 0px 0px 3px 0px #c082ff;
+  }
+  .second-discount-name {
+    grid-area: name;
+  }
+  .second-discount-per {
+    font-family: "Poppins", sans-serif;
+    grid-area: percentage;
+  }
+}
+
+.third-discount {
+  grid-area: third-discount;
+  padding-left: 0.6vw;
+  font-size: 1.05vw;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 18% 61% 20%;
+  grid-template-areas: "colorr name percentage";
+  align-items: start;
+
+  .third-discount-color {
+    grid-area: colorr;
+    height: 1.5vw;
+    width: 3.2vw;
+    border-radius: 0.3vw;
+    background-color: #8d25f6;
+    box-shadow: 0px 0px 3px 0px #a143ff;
+  }
+  .third-discount-name {
+    grid-area: name;
+  }
+  .third-discount-per {
+    font-family: "Poppins", sans-serif;
+    grid-area: percentage;
+  }
+}
+
+/* -------------------------------------progress bar--------------------------------- */
+:root {
+  --special-discount: 0%;
+  --fixed-card: 0%;
+  --fixed-coupon: 0%;
+}
+
+.pie-chart {
+  grid-area: pie-chart;
+  align-self: center;
+  justify-self: center;
+
+  .pie-chart-progress {
+    position: relative;
+    height: 13vw;
+    width: 13vw;
+    border-radius: 50%;
+    background: conic-gradient(
+      #31035fd3 0% calc(var(--special-discount) - 1%),
+      #cbd9fc calc(var(--special-discount) - 1%) var(--special-discount),
+      #c082ff var(--special-discount)
+        calc(calc(var(--special-discount) + var(--fixed-card)) - 1%),
+      #cbd9fc calc(calc(var(--special-discount) + var(--fixed-card)) - 1%)
+        calc(var(--special-discount) + var(--fixed-card)),
+      #a143ff calc(var(--special-discount) + var(--fixed-card))
+        calc(
+          calc(
+              var(--special-discount) + var(--fixed-card) + var(--fixed-coupon)
+            ) - 1%
+        ),
+      #cbd9fc
+        calc(
+          calc(
+              var(--special-discount) + var(--fixed-card) + var(--fixed-coupon)
+            ) - 1%
+        )
+        calc(var(--special-discount) + var(--fixed-card) + var(--fixed-coupon))
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pie-chart-progress::before {
+    content: "";
+    position: absolute;
+    height: 12.3vw;
+    width: 12.3vw;
+    border-radius: 50%;
+    background-color: #cbd9fc;
+  }
+
+  .pie-chart-value {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-size: 2.8vw;
+    font-weight: 450;
+    color: #000000;
+  }
+}
+
+/* ----------------------------------------main middle----------------------------------------- */
+.main-middle {
+  position: relative;
+  display: grid;
+  grid-template-rows: 10% 5% 85%;
+  grid-template-columns: 0.5% 99% 0.5%;
+  grid-template-areas:
+    "customer-review customer-review customer-review"
+    "see-more see-more see-more"
+    "left-arrow review right-arrow";
+
+  .c-review {
+    grid-area: customer-review;
+  }
+  .see-more {
+    grid-area: see-more;
+  }
+  .button-left {
+    grid-area: left-arrow;
+  }
+  .button-right {
+    grid-area: right-arrow;
+  }
+  .review-container {
+    grid-area: review;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.c-review {
+  font-size: 1.3vw;
+  padding-left: 0.6vw;
+  padding-top: 0.6vw;
+}
+
+.see-more {
+  font-size: 0.6vw;
+  justify-self: right;
+  padding-right: 0.6vw;
+  color: #5144ec;
+  cursor: pointer;
+}
+
+.common-button {
+  align-self: center;
+  justify-self: center;
+
+  background-color: #86b6e3;
+  height: 2.2vw;
+  width: 2.2vw;
+
+  border: 2px solid #3e7db9;
+  box-shadow: 0px 0px 3.5px 0px #33689b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 1.6vw;
+    width: 1.6vw;
+  }
+}
+
+.button-left {
+  /* position: absolute; */
+  left: -1.15vw;
+  z-index: 0;
+}
+
+.button-right {
+  /* position: absolute; */
+  right: -1.15vw;
+  z-index: 0;
+}
+
+.button-hover:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.08s linear;
+  background-color: #6e9ac2;
+  border: 2px solid #33699b;
+}
+
+/* .review-box1 {
+  margin-right: 0.25vw;
+}
+
+.review-box2 {
+  margin-left: 0.25vw;
+} */
+
+.review-boxes {
+  /* background-color: red; */
+  height: 97.5%;
+  width: 99.2%;
+  display: flex;
+  gap: 0.5vw;
+  position: absolute;
+  border-radius: 0.5vw;
+  transition: 1s;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.common-review-box {
+  background-color: #a7bfff;
+  border-radius: 0.6vw;
+  height: 100%;
+  width: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-rows: 55% 35% 10%;
+  grid-template-columns: 100%;
+
+  grid-template-areas:
+    "review"
+    "p-name"
+    "rating";
+
+  /* transition: 1s; */
+  /* position:absolute; */
+  /* overflow: hidden; */
+}
+
+.paragraph {
+  grid-area: review;
+  padding: 3vw;
+  font-size: 0.8vw;
+  font-style: italic;
+  text-align: justify;
+}
+.review-profile {
+  grid-area: p-name;
+  padding: 3vw;
+  gap: 0 0.5vw;
+  display: grid;
+  grid-template-columns: 0.115fr 1fr;
+  grid-template-areas:
+    "repic rename"
+    "repic retime";
+
+  .re-img {
+    grid-area: repic;
+    height: 2.8vw;
+    width: 2.8vw;
+    border-radius: 0.3vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .re-name {
+    align-self: end;
+    grid-area: rename;
+    font-size: 0.8vw;
+  }
+  .re-time {
+    align-self: start;
+    grid-area: retime;
+    font-size: 0.6vw;
+  }
+}
+.ratings {
+  grid-area: rating;
+  justify-self: right;
+  padding-right: 2.5vw;
+
+  img {
+    height: 0.8vw;
+    width: 0.8vw;
+    margin-right: 0.2vw;
+  }
+}
+
+/* --------------------------------------------thrid-part-------------------------------- */
+
+.main-bottom {
+  display: grid;
+
+  grid-template-rows: 7% 89% 4%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "top-country"
+    "revenue-details"
+    "see-more2";
+
+  .top-country {
+    grid-area: top-country;
+  }
+  .revenue-details {
+    grid-area: revenue-details;
+  }
+  .see-more2 {
+    grid-area: see-more2;
+  }
+}
+
+.revenue-details {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "revenue-details-heading"
+    "revenue-details-body";
+
+  .revenue-details-heading {
+    grid-area: revenue-details-heading;
+  }
+  .revenue-details-body {
+    grid-area: revenue-details-body;
+  }
+
+  padding-left: 0.4vw;
+  padding-top: 0.4vw;
+  padding-right: 0.4vw;
+}
+
+.revenue-details-heading {
+  margin-top: 1vw;
+  margin-bottom: 0.5vw;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  background: #a7bfff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4vw;
+  font-size: 1vw;
+  font-weight: 410;
+
+  display: grid;
+  grid-template-rows: 49% 1% 49%;
+  grid-template-columns: 28% 24% 24% 24%;
+  grid-template-areas:
+    "revenue-country revenue-user revenue-transacton revenue-revenue"
+    "hr-line hr-line hr-line hr-line"
+    "total-country total-user total-transacton total-revenue";
+  .revenue-country {
+    grid-area: revenue-country;
+    align-self: center;
+  }
+  .revenue-user {
+    grid-area: revenue-user;
+    align-self: center;
+  }
+  .revenue-transaction {
+    grid-area: revenue-transacton;
+    align-self: center;
+  }
+  .revenue-revenue {
+    grid-area: revenue-revenue;
+    align-self: center;
+  }
+  .hr-line {
+    grid-area: hr-line;
+    align-self: center;
+    color: #a7bfff;
+  }
+  .total-country {
+    grid-area: total-country;
+    align-self: center;
+  }
+  .total-user {
+    grid-area: total-user;
+    align-self: center;
+  }
+  .total-transaction {
+    grid-area: total-transacton;
+    align-self: center;
+  }
+  .total-revenue {
+    grid-area: total-revenue;
+    align-self: center;
+  }
+}
+
+.revenue-details-body {
+  margin-top: 0.1vw;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  font-size: 0.85vw;
+
+  background: #a7bfff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4vw;
+
+  display: grid;
+  grid-template-rows: repeat(5, 20%);
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "first-country"
+    "second-country"
+    "third-country"
+    "fourth-country"
+    "fifth-country";
+
+  align-items: center;
+
+  .first-country {
+    grid-area: first-country;
+  }
+  .second-country {
+    grid-area: second-country;
+  }
+  .third-country {
+    grid-area: third-country;
+  }
+  .fourth-country {
+    grid-area: fourth-country;
+  }
+
+  img {
+    height: 1.5vw;
+    width: 2.6vw;
+    object-fit: cover;
+  }
+}
+
+.common-country {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 2% 5% 21% 24% 24% 24%;
+  grid-template-areas: "country-no country-img country-name country-user country-transaction country-revenue";
+
+  .country-no {
+    grid-area: country-no;
+    align-self: center;
+    padding-top: 0.18vw;
+  }
+  .country-img {
+    grid-area: country-img;
+  }
+  .country-name {
+    grid-area: country-name;
+  }
+  .country-user {
+    grid-area: country-user;
+  }
+  .country-transaction {
+    grid-area: country-transaction;
+  }
+  .country-revenue {
+    grid-area: country-revenue;
+  }
+}

@@ -1,0 +1,516 @@
+.settings {
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  font-weight: 600;
+}
+
+.header-settings {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.4vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: #000000;
+
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+.item3 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+
+  grid-template-areas: "short-profile profile-details";
+
+  .short-profile {
+    grid-area: short-profile;
+  }
+
+  .profile-details {
+    grid-area: profile-details;
+    /* background-color: red; */
+  }
+}
+
+.short-profile {
+  height: 40%;
+  width: 70%;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 100%;
+
+  grid-template-areas:
+    "upper-profile"
+    "lower-profile";
+
+  align-items: center;
+  justify-content: center;
+
+  .upper-profile {
+    grid-area: upper-profile;
+  }
+  .lower-profile {
+    grid-area: lower-profile;
+  }
+
+  background-color: rgba(223, 215, 253, 0.76);
+  /* border-radius: 2vw; */
+  margin-top: 33%;
+  margin-left: 14%;
+  font-size: 0.8vw;
+  backdrop-filter: blur(5px);
+  border-radius: 0.4vw;
+  box-shadow: 0px 0px 3.5px 1px #314a68;
+}
+
+.upper-profile {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% repeat(4, 5%);
+  grid-template-areas:
+    "upper-profile-pic"
+    "name"
+    "email"
+    "role"
+    "location";
+
+  align-items: center;
+
+  .upper-profile-pic {
+    grid-area: upper-profile-pic;
+    justify-self: center;
+  }
+  .name {
+    grid-area: name;
+    justify-self: center;
+  }
+  .email {
+    grid-area: email;
+    justify-self: center;
+  }
+  .role {
+    grid-area: role;
+    justify-self: center;
+  }
+  .location {
+    grid-area: location;
+    justify-self: center;
+  }
+}
+
+.upper-profile-pic {
+  height: 60%;
+  width: 40%;
+  border-radius: 5%;
+  box-shadow: 0px 0px 3.5px 0px #314a68;
+}
+
+.lower-profile {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 8%);
+  grid-template-areas:
+    "facebook"
+    "github"
+    "linkedin";
+
+  .facebook {
+    grid-area: facebook;
+    height: 100%;
+    width: 100%;
+  }
+  .github {
+    grid-area: github;
+    height: 100%;
+    width: 100%;
+  }
+  .linkedin {
+    grid-area: linkedin;
+    height: 100%;
+    width: 100%;
+  }
+
+  padding-left: 1.6vw;
+  padding-right: 2vw;
+}
+
+.facebook {
+  display: grid;
+  grid-template-columns: 15% 20% 65%;
+  grid-template-rows: 100%;
+  grid-template-areas: "icon text link";
+  padding-bottom: 0.5vw;
+
+  .facebook-icon {
+    grid-area: icon;
+    height: 2.2vw;
+    width: 2.2vw;
+    justify-self: center;
+    align-self: center;
+  }
+  .facebook-text {
+    grid-area: text;
+    justify-self: left;
+    align-self: center;
+  }
+  .facebook-link {
+    grid-area: link;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+.github {
+  display: grid;
+  grid-template-columns: 15% 20% 65%;
+  grid-template-rows: 100%;
+  grid-template-areas: "icon text link";
+  padding-bottom: 0.5vw;
+
+  .github-icon {
+    grid-area: icon;
+    height: 2.1vw;
+    width: 2.1vw;
+
+    justify-self: center;
+    align-self: center;
+  }
+  .github-text {
+    grid-area: text;
+    justify-self: left;
+    align-self: center;
+  }
+  .github-link {
+    grid-area: link;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+.linkedin {
+  display: grid;
+  grid-template-columns: 15% 20% 65%;
+  grid-template-rows: 100%;
+  grid-template-areas: "icon text link";
+  padding-bottom: 0.5vw;
+
+  .linkedin-icon {
+    grid-area: icon;
+    height: 2.2vw;
+    width: 2.2vw;
+    justify-self: center;
+    align-self: center;
+  }
+  .linkedin-text {
+    grid-area: text;
+    justify-self: left;
+    align-self: center;
+  }
+  .linkedin-link {
+    grid-area: link;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+.profile-details {
+  font-size: 0.8vw;
+  height: 58%;
+  width: 75%;
+  background-color: rgba(223, 215, 253, 0.76);
+  margin-top: 8%;
+  margin-right: 10%;
+  font-size: 0.8vw;
+  backdrop-filter: blur(5px);
+  border-radius: 0.4vw;
+  box-shadow: 0px 0px 3.5px 1px #314a68;
+  justify-self: center;
+}
+.profile-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1vw;
+  font-size: 1vw;
+}
+
+.edit-form-body {
+  display: grid;
+  grid-template-columns: 20% 50% 5%;
+  grid-template-rows: repeat(12, 8%);
+  grid-template-areas:
+    "pdusername pdusernamee pdusernamee"
+    "pdname pdnamee pdnamee"
+    "pdemail pdemaile pdemaile"
+    "pdlocation pdlocatione pdlocatione"
+    "pdphone pdphonee pdphonee"
+    "pdgender pdgendere pdgendere"
+    "pdfacebook pdfacebooke pdfacebooke"
+    "pdgithub pdgithube pdgithube"
+    "pdlinkedin pdlinkedine pdlinkedine"
+    "pdimage pdimagee pdimagee"
+    "pdpassword pdpassworde show-hide"
+    "pdsubmit pdsubmit pdsubmit";
+
+  padding-left: 7vw;
+  padding-top: 2vw;
+  gap: 1.7vw;
+}
+
+.pdusername {
+  grid-area: pdusername;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+#pdusername {
+  grid-area: pdusernamee;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdname {
+  grid-area: pdname;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+#pdname {
+  grid-area: pdnamee;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdemail {
+  grid-area: pdemail;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdemail {
+  grid-area: pdemaile;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdlocation {
+  grid-area: pdlocation;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdlocation {
+  grid-area: pdlocatione;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdphone {
+  grid-area: pdphone;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdphone {
+  grid-area: pdphonee;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdgender {
+  grid-area: pdgender;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdgender {
+  grid-area: pdgendere;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdfacebook {
+  grid-area: pdfacebook;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdfacebook {
+  grid-area: pdfacebooke;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdgithub {
+  grid-area: pdgithub;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdgithub {
+  grid-area: pdgithube;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdlinkedin {
+  grid-area: pdlinkedin;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdlinkedin {
+  grid-area: pdlinkedine;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.pdimage {
+  grid-area: pdimage;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+.pdimage {
+  grid-area: pdimage;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdimage {
+  grid-area: pdimagee;
+  justify-self: left;
+  align-self: center;
+}
+
+.pdpassword {
+  grid-area: pdpassword;
+  justify-self: left;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#pdpassword {
+  grid-area: pdpassworde;
+  justify-self: left;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+}
+
+.show-hide {
+  grid-area: show-hide;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7vw;
+}
+
+.pdsubmit {
+  grid-area: pdsubmit;
+  justify-self: center;
+  align-self: center;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #7fc1f885;
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pdsubmit:hover {
+  background-color: #7fc1ff;
+}

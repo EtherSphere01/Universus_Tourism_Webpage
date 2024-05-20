@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Reddit Mono", monospace; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #d8ccfc;
+  /* height: 50vw;
+  width: 30vw; */
+  /* font-family: "Reddit Mono", monospace; */
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+.pointer2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+  background-color: transparent;
+}
+
+.container {
+  padding: 0.3vw;
+  display: grid;
+  grid-template-rows: 4vw auto;
+  grid-template-columns: 20vw auto;
+  gap: 0.3vw;
+  grid-template-areas:
+    "left-panel header"
+    "left-panel main";
+
+  .item1 {
+    grid-area: left-panel;
+  }
+  .item2 {
+    grid-area: header;
+  }
+  .item3 {
+    grid-area: main;
+  }
+}
+
+.left-panel {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8vw;
+  background-color: #cbd9fc;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5vw;
+  background-color: #ffffff;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6vw;
+  background-color: #ffffff;
+}
+
+/* -----------------------Left panel Design-------------------- */
+
+/* .focus:hover {
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  cursor: pointer;
+} */
+
+.left-panel {
+  display: grid;
+  grid-template-rows: 11vw 39vw 15vw 8vw;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo img {
+  background-color: transparent;
+  height: 10vw;
+  width: 9.5vw;
+}
+
+.menu img {
+  /* font-family: "montserrat", sans-serif; */
+  background-color: transparent;
+  height: 1.8vw;
+  width: 1.8vw;
+}
+
+.transition {
+  padding: 1vw;
+  display: grid;
+  grid-template-rows: 0.1vw;
+  grid-template-columns: 1vw 6.7vw;
+  gap: 0.8vw;
+  justify-items: left;
+  align-items: center;
+  font-size: 1vw;
+  margin: 2vw;
+  min-width: 7.7vw;
+
+  img {
+    height: 1.3vw;
+    width: 1.3vw;
+  }
+
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  /* transition: all 0.5s linear; */
+}
+
+.transition::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  cursor: pointer;
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: 0 0;
+}
+.focus::before {
+  transform: scaleX(0);
+}
+.focus:hover::before {
+  transform: scaleX(1);
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1vw;
+  font-size: 0.9vw;
+
+  img {
+    background-color: transparent;
+    height: 2.7vw;
+    width: 2.7vw;
+    box-shadow: 0px 0px 3.5px 0px #000000;
+    border-radius: 0.45vw;
+    margin-bottom: 0.3vw;
+  }
+
+  .log {
+    color: rgb(2, 2, 2);
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5vw;
+    width: 4.6vw;
+    font-size: 0.9vw;
+    border-radius: 0.3vw;
+    border: 1px solid #cc4747a8;
+    background-color: #ee333331;
+    box-shadow: 0px 1px 4px 0px #be2e3a;
+    transition: 0.2s linear;
+  }
+
+  .name {
+    font-size: 0.8vw;
+  }
+  .email {
+    font-size: 0.6vw;
+  }
+}
+
+.logoutbutton {
+  border: none;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  font-size: 0.8vw;
+}
+
+.logoutbutton:hover {
+  color: white;
+  cursor: pointer;
+}
+.log-out:hover {
+  cursor: pointer;
+  border: 1px solid #cc4747;
+  background-color: #d61f1f9c;
+  box-shadow: 0px 0px 3.5px 0px #e01627;
+  color: white;
+}
+
+.copy-right {
+  margin-top: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1vw;
+  font-size: 0.54vw;
+  color: #636363;
+}
+
+/* -----------------------------------------header-------------------------------- */
+
+.header {
+  /* font-family: "Reddit Mono", monospace; */
+  display: grid;
+  grid-template-rows: 4vw;
+  grid-template-columns: 15vw 30vw 25vw 2vw 2vw 5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  height: 1.5vw;
+  width: 25vw;
+  border-radius: 0.5vw;
+  border: 1px solid #223392;
+  background-color: #aad8fe5e;
+  /* box-shadow: 0px 0px 3.5px 0px #287ad8; */
+  box-shadow: 0px 1px 3px 1px #4295f3b9;
+
+  margin-left: 2vw;
+
+  .search-box {
+    /* font-family: "Reddit Mono", monospace; */
+    height: 1.5vw;
+    width: 25vw;
+    text-align: left;
+    font-size: 0.85vw;
+    padding-left: 0.5vw;
+    border: none;
+    outline: none;
+    border-radius: 0.5vw;
+    background-color: transparent;
+  }
+
+  img {
+    height: 1.4vw;
+    width: 1.5vw;
+    border: 1px solid #000000;
+    border-radius: 0.5vw;
+    border: none;
+  }
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  /* padding-left: 1vw; */
+  font-size: 0.9vw;
+  color: #173c66;
+
+  img {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 1.3vw;
+    width: 1.3vw;
+  }
+  height: 1.3vw;
+  width: 1.3vw;
+
+  border: none;
+  background-color: transparent;
+}
+
+.message-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 1.3vw;
+    width: 1.3vw;
+  }
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 0.8vw;
+  img {
+    background-color: transparent;
+    height: 3.2vw;
+    width: 3.2vw;
+    box-shadow: 0px 0px 3.5px 0px #000000;
+    border-radius: 0.3vw;
+  }
+}
+
+.new-background {
+  position: absolute;
+  background-color: #000000;
+  height: 72.5vw;
+  width: 100vw;
+  opacity: 0.2;
+}
+
+.notification-popup {
+  position: absolute;
+  background-color: #d3cccca2;
+  height: 29vw;
+  width: 21vw;
+  border-radius: 0.8vw;
+  box-shadow: 0px 0px 3.5px 0px #000000;
+  z-index: 1;
+  top: 5vw;
+  right: 5vw;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+
+  button {
+    border: none;
+    /* background-color: transparent; */
+    font-size: 1vw;
+    color: #000000;
+    cursor: pointer;
+    height: 1.2vw;
+    width: 1.2vw;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    /* box-shadow: 0px 0px 3.5px 0px #000000; */
+    margin-left: 93%;
+    font-size: 0.8vw;
+  }
+  button:hover {
+    background-color: #eb6f6f;
+    color: white;
+  }
+}
+
+.main-notification {
+  height: 100%;
+  width: 100%;
+}

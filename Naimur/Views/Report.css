@@ -1,0 +1,427 @@
+.report {
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  font-weight: 600;
+}
+
+.header-report {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.4vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: #000000;
+
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+/* ---------------------------------------main body----------------------------------------- */
+/* ---------------------------------------site summary-------------------------------------- */
+.site-summary {
+  margin-left: 0.35vw;
+  margin-top: 0.3vw;
+  margin-bottom: 0.5vw;
+  height: 8%;
+  width: 99.23%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(5, 19.97%);
+  grid-template-areas: "s-box1 s-box2 s-box3 s-box4 s-box5";
+
+  .s-box1 {
+    grid-area: s-box1;
+  }
+
+  .s-box2 {
+    grid-area: s-box2;
+  }
+
+  .s-box3 {
+    grid-area: s-box3;
+  }
+
+  .s-box4 {
+    grid-area: s-box4;
+  }
+
+  .s-box5 {
+    grid-area: s-box5;
+  }
+
+  .s-common-heading {
+    font-family: "audiowide";
+    font-size: 1.3vw;
+  }
+
+  .s-common-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #8db3e2b2;
+    border-radius: 0.4vw;
+    margin: 0.1vw;
+  }
+  .s-common-flex:hover {
+    background-color: #8db3e2;
+    transform: scale(1.02);
+  }
+  .s-common-total {
+    font-family: "audiowide";
+    font-size: 1vw;
+  }
+
+  border-radius: 0.4vw;
+  /* background-color: #8db3e28a; */
+}
+
+/* ---------------------------------------report details-------------------------------------- */
+.report-details {
+  margin: 0.3vw;
+  height: 20%;
+  width: 99.23%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "earning-details expense-details";
+
+  .earning-details {
+    grid-area: earning-details;
+  }
+  .expense-details {
+    grid-area: expense-details;
+  }
+}
+
+.earning-details {
+  display: grid;
+  grid-template-rows: 14% repeat(3, 24%) 14%;
+  grid-template-columns: 25% 65%;
+  grid-template-areas:
+    "earning-heading earning-heading"
+    "from-tourist from-tour-graph"
+    "from-hotel from-hotel-graph"
+    "from-add from-add-graph"
+    "total-earning total-earning";
+
+  .earning-heading {
+    grid-area: earning-heading;
+    font-size: 1.3vw;
+    align-self: center;
+    /* justify-self: center; */
+  }
+  .from-tourist {
+    grid-area: from-tourist;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-tour-graph {
+    grid-area: from-tour-graph;
+    align-self: center;
+  }
+  .from-hotel {
+    grid-area: from-hotel;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-hotel-graph {
+    grid-area: from-hotel-graph;
+    align-self: center;
+  }
+  .from-add {
+    grid-area: from-add;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-add-graph {
+    grid-area: from-add-graph;
+    align-self: center;
+  }
+  .total-earning-sum {
+    grid-area: total-earning;
+    font-size: 0.75vw;
+    align-self: end;
+    color: green;
+    font-weight: 550;
+  }
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #a7beff75;
+  border-radius: 0.4vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+}
+
+.from-hotel-graph,
+.from-add-graph,
+.from-tour-graph {
+  margin-left: 0.5vw;
+  height: 40%;
+  width: 100%;
+  border-radius: 10vw;
+  /* border: 1px solid #000000; */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #95b8e24f;
+  p {
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  position: relative;
+  z-index: 0;
+}
+
+.from-hotel-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #6e83fc9f;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+.from-add-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #31769b6e;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+.from-tour-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #8eacffc7;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+/* -----------------------------------Expense Details-------------------------*/
+
+.expense-details {
+  margin-left: 0.28vw;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #a7beff7a;
+  border-radius: 0.4vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+
+  display: grid;
+  grid-template-rows: 14% repeat(3, 24%) 14%;
+  grid-template-columns: 25% 65%;
+  grid-template-areas:
+    "earning-heading earning-heading"
+    "from-tourguide from-tourguide-graph"
+    "from-office from-office-graph"
+    "from-other from-other-graph"
+    "total-expense total-expense";
+
+  .expense-heading {
+    grid-area: earning-heading;
+    font-size: 1.3vw;
+    align-self: center;
+    /* justify-self: center; */
+  }
+  .from-tourguide {
+    grid-area: from-tourguide;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-tourguide-graph {
+    grid-area: from-tourguide-graph;
+    align-self: center;
+  }
+  .from-office {
+    grid-area: from-office;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-office-graph {
+    grid-area: from-office-graph;
+    align-self: center;
+  }
+  .from-other {
+    grid-area: from-other;
+    align-self: center;
+    font-size: 0.9vw;
+  }
+  .from-other-graph {
+    grid-area: from-other-graph;
+    align-self: center;
+  }
+  .total-expense-sum {
+    grid-area: total-expense;
+    font-size: 0.75vw;
+    align-self: end;
+    color: tomato;
+    font-weight: 550;
+  }
+}
+
+.from-office-graph,
+.from-other-graph,
+.from-tourguide-graph {
+  margin-left: 0.5vw;
+  height: 40%;
+  width: 100%;
+  border-radius: 10vw;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #95b8e24f;
+  p {
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+  position: relative;
+  z-index: 0;
+}
+
+.from-office-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #6e83fc9f;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+.from-other-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #31769b6e;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+.from-tourguide-graph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #8eacffc7;
+  border-radius: 10vw;
+  z-index: -1;
+}
+
+.chartjs {
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  /* background-color: #a29deeee; */
+  border-radius: 0.4vw;
+  height: 28.5%;
+  width: 99.5%;
+  margin-left: 0.4vw;
+  margin-top: 1.5vw;
+
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "title1 title2"
+    "first-chart second-chart";
+
+  .title1 {
+    margin: 0.3vw;
+    grid-area: title1;
+    align-self: end;
+    font-size: 1.2vw;
+  }
+  .title2 {
+    margin: 0.3vw;
+    grid-area: title2;
+    align-self: end;
+    font-size: 1.2vw;
+  }
+
+  #earningVSexpense {
+    grid-area: first-chart;
+    /* align-self: left; */
+    /* justify-self: center; */
+  }
+  #joiningDetails {
+    grid-area: second-chart;
+    /* align-self: right; */
+    /* justify-self: center; */
+  }
+}
+
+.top-p {
+  /* background-color: pink; */
+  margin-top: 4vw;
+  height: 30%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "title title"
+    "radar radar";
+
+  .top-places {
+    margin-left: 0.3vw;
+    margin-bottom: 1vw;
+    grid-area: title;
+    font-size: 1.2vw;
+    justify-self: center;
+    align-self: start;
+  }
+
+  #topPlaces {
+    grid-area: radar;
+    justify-self: center;
+  }
+}
+
+/* .download-button {
+  border: 1px solid #94a4fd;
+  border-radius: 0.3vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  font-weight: 500;
+  height: 2vw;
+  width: 10vw;
+  text-align: center;
+  margin-left: 35vw;
+  margin-top: 4.5%;
+  font-size: 0.8vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button:hover {
+  border: 1px solid #94a4fd;
+  background-color: #84b9e6;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  cursor: pointer;
+} */

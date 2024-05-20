@@ -1,0 +1,328 @@
+.tours {
+  border: 1px solid #94a4fd;
+  border-radius: 0.4vw;
+  background-color: #94c9f5;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  font-weight: 600;
+}
+
+.header-tours {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.4vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: #000000;
+
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* activities page */
+
+.small-container {
+  max-width: 100%; /* Adjust the maximum width of the container */
+  height: 15%;
+  margin: auto;
+  display: flex; /* Set display to flex */
+  flex-wrap: wrap; /* Allow products to wrap to multiple lines */
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.small-containe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2vw;
+}
+
+/* Adjust the width of each column to fit 3 columns per row */
+.col-4 {
+  width: calc(39.33% - 10px); /* Adjust the width as needed */
+  height: calc(36.33% - 10px); /* Set a fixed height for the columns */
+  float: left; /* Float the columns to display them side by side */
+  margin-right: 10px; /* Add some margin between columns */
+  margin-bottom: 20px; /* Add margin at the bottom of each card */
+  transition: transform 0.5s;
+}
+
+/* Clear the float for every third column to start a new row */
+.col-4:nth-child(3n + 1) {
+  clear: none; /* Keep the default clear */
+  margin-right: 10px; /* Add margin between columns */
+  margin-left: 0; /* Remove the margin on the left side of the container */
+}
+
+/* Add margin to the left of the first column in each row */
+.col-4:nth-child(3n + 1) {
+  margin-left: 0; /* Remove the margin on the left side of the container */
+}
+
+/* Add margin to the right of the last column in each row */
+.col-4:nth-child(3n) {
+  margin-right: 0; /* Remove margin for the last column in each row */
+}
+
+.col-4 img {
+  width: 100%;
+  border: 0.5px solid #69a4c0;
+  border-radius: 20px;
+}
+
+/* Reduce the font size and padding for card titles */
+.col-4 h4 {
+  font-size: 0.95rem; /* Reduce font size for smaller cards */
+  padding: 3px 0; /* Reduce padding for smaller cards */
+  color: #0f1035;
+  font-weight: bold;
+}
+
+/* Reduce the font size for prices */
+.col-4 p {
+  font-size: 14px; /* Reduce font size for smaller cards */
+  font-weight: bold;
+}
+
+.rating .fa {
+  color: #ff523b;
+  font-size: 14px;
+}
+
+.activities-title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #0f1035;
+}
+
+.activities-title::after {
+  content: "";
+  background: #2b3d5e;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.col-4:hover {
+  transform: translate(-5px);
+}
+
+/* Style for the row-2 class */
+.row-2 {
+  width: 100%; /* Ensure the row spans the entire width */
+  display: flex; /* Set display to flex */
+  justify-content: space-between; /* Align items with space between them */
+  margin: 100px auto 50px; /* Adjust margin as needed */
+}
+
+/* Adjustments for the select element */
+.row-2 select {
+  padding: 5px; /* Add padding */
+  border: 1px solid #3f5c8c; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+select:focus {
+  outline: none;
+}
+
+.detailsimage {
+  height: 15vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.details-btn-all {
+  background-color: rgba(0, 0, 255, 0.527);
+  color: white;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-btn-all:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.details-table {
+  width: 100%;
+  height: 70%;
+  background-color: red;
+  position: absolute;
+  /* top: 10%; */
+  visibility: visible;
+}
+
+.edit,
+.submit {
+  height: 1.5rem;
+  width: 4rem;
+  border: none;
+  border: 1px solid #b9c3fc;
+  border-radius: 0.3rem;
+  background-color: #d5d1defe;
+  box-shadow: 0px 0px 3.5px 0px #9e9ba5fe;
+}
+
+.edit:hover,
+.submit:hover {
+  border: 1px solid #94a4fd;
+  background-color: #84b9e6;
+  box-shadow: 0px 0px 3.5px 0px #1873db;
+  cursor: pointer;
+}
+
+/* edit form */
+
+.edit-form {
+  margin-top: 4vw;
+  margin-left: 10%;
+  width: 62%;
+  height: 56%;
+  background-color: #fff5;
+
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  /* display: none; */
+  /* z-index: -1; */
+}
+
+.edit-form-header {
+  width: 99%;
+  height: 3.5%;
+  background-color: rgba(137, 84, 223, 0.267);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .edit-form-title {
+    font-size: 1.1vw;
+    font-weight: 600;
+  }
+
+  button {
+    height: 1.6rem;
+    width: 1.6rem;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #dd5959;
+    box-shadow: 0px 0px 3.5px 0px #f17373fe;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+}
+
+.edit-form-body {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+  grid-template-rows: repeat(6, 10%) 5% 10%;
+  grid-template-areas:
+    "username utextfill imagee"
+    "name ntextfill imagee"
+    "location ltextfill imagee"
+    "phone ptextfill imagee"
+    "salary stextfill imagee"
+    "image itextfill imagee"
+    "fillup fillup imagee"
+    "submit submit imagee";
+
+  gap: 1vw;
+  padding-left: 3vw;
+  padding-top: 2vw;
+}
+
+.username {
+  grid-area: username;
+}
+.name {
+  grid-area: name;
+}
+.location {
+  grid-area: location;
+}
+.phone {
+  grid-area: phone;
+}
+.salary {
+  grid-area: salary;
+}
+.image {
+  grid-area: image;
+}
+.fillup {
+  grid-area: fillup;
+  align-self: center;
+  justify-self: center;
+  color: red;
+  margin-left: 7vw;
+}
+.submit {
+  grid-area: submit;
+  align-self: center;
+  justify-self: center;
+  margin-left: 7vw;
+}
+.edit-image {
+  grid-area: imagee;
+  justify-self: center;
+  padding-top: 2%;
+  padding-left: 10%;
+  height: 7.5vw;
+  width: 7.5vw;
+  /* border-radius: 50%; */
+  img {
+    width: 10.5vw;
+    height: 10.5vw;
+    border-radius: 6%;
+    border: 1px solid #59595aab;
+  }
+}
+#username {
+  grid-area: utextfill;
+}
+#name {
+  grid-area: ntextfill;
+}
+#location {
+  grid-area: ltextfill;
+}
+#phone {
+  grid-area: ptextfill;
+}
+#image {
+  grid-area: itextfill;
+}
+#salary {
+  grid-area: stextfill;
+}
+
+.common-textfield {
+  border: none;
+  border-radius: 0.2vw;
+  background-color: rgba(182, 153, 153, 0.333);
+}
