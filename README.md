@@ -57,8 +57,6 @@ Pass: admin
 
 2-> Import the database;
 
-3-> Copy the unzip file and paste into the htdocs folder.
+3-> Copy the unzip files and paste into the htdocs folder.
 
-4-> Download the vendor folder from here (https://aiubedu60714-my.sharepoint.com/:f:/g/personal/22-46521-1_student_aiub_edu/Eu4S7WYgf4JJsjdPe7wel08BLMPDVbuCvcduGOkCrj7WKw?e=nNL73b). copy and paste the vendor folder to (Tourist Page -> Views)
-
-5-> http://localhost/Tourist%20Page/Views/login.php (copy the link and paste it to your browser)
+4-> http://localhost/Tourist%20Page/Views/home.php (copy the link and paste it to your browser)
